@@ -527,6 +527,7 @@ footer{
         width: 280px;
         height: 40px;
         padding-left: 0;
+        font-size: 16px;
     }
     .email input::placeholder{
         text-align: center;
