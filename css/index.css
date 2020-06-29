@@ -36,8 +36,16 @@
     justify-content: center;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
 section.head{
-    /* height: 600px; */
     position: relative;
     background-color: #e5e5e5;
 }
@@ -48,6 +56,7 @@ nav{
     background-color: #e5e5e5;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 0;
     font-weight: bold;
 }
@@ -68,7 +77,23 @@ ul{
 ul li {
     padding: 0 30px;
 }
-
+.bars{
+    display: none;
+}
+.hire{
+    padding: 10;
+}
+.hire button{
+    border-radius: 50px;
+    text-align: center;
+    border: 2px solid #3D85CC;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+.hire button:hover{
+    background-color: #3D85CC;
+    color: #fff;
+}
 header{
     display: flex;
     padding: 50px;
@@ -373,9 +398,49 @@ footer{
     .my-md-2{
         margin: 20px 0;
     }
+
+    .bars{
+        display: block;
+    }
+    .bar1, .bar2, .bar3{
+        width: 35px;
+        height: 5px;
+        background-color: #3D85CC;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change .bar1{
+    transform: rotate(-45deg) translate(-9px,6px);
+    }
+    .change .bar2{
+        opacity: 0;
+    }
+
+    .change .bar3{
+        transform: rotate(45deg) translate(-8px,-8px);
+    }
     nav > div:last-of-type{
-        padding: 0 50px;
-        content: url("../images/menu.svg");
+        margin: 0 50px;
+        width: 35px;
+        height: 35px;        
+    }
+    ul{
+        display: none;
+        background-color: #f1f1f1;
+    }
+    .change ul{
+        display: block;
+        position: absolute;
+        height: 155px;
+        width: 100%;
+        top: 72px;
+        left: 0;
+        text-align: right;
+    }
+    .change ul li {
+        padding: 5px 50px;
+        border-bottom: 1px solid #e5e5e5;
     }
     header{
         flex-direction: column-reverse;
@@ -519,10 +584,6 @@ footer{
         width: 150px!important;
         height: 150px!important;
     }
-
-
-
-
     .email input{
         width: 280px;
         height: 40px;

@@ -14,14 +14,21 @@
                 <span id="logo"></span>
                 <span>BryanMiller</span>
             </div>
-            <div>
+            <div onclick="toggleMe(this)">
                 <ul>
-                    <li>About</li>
-                    <li>Work</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                    <li>Hire Me</li>
+                    <li><a href="">About</a></li>
+                    <li><a href="#apps">Work</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="hire">
+                        <button>Hire Me</button>
+                    </li>
                 </ul>
+                <div class="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
         </nav>
 
@@ -189,7 +196,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="contact">
         <div>Contact Me</div>
         <div class="fw-bold py-1 fs-22">
             <div>Let us create amazing <br> products</div>
@@ -213,6 +220,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
 
