@@ -31,17 +31,25 @@
 .fs-11{
     font-size: 11px;
 }
-.rounded-bottom-d{
-    border-bottom-right-radius: 20px!important;
-    border-bottom-left-radius: 20px!important;
+.rounded-bottom-d, .rounded-all{
+    border-bottom-right-radius: 30px!important;
+    border-bottom-left-radius: 30px!important;
 }
-.rounded-top-d{
-    border-top-right-radius: 20px!important;
-    border-top-left-radius: 20px!important;
+.rounded-top-d, .rounded-all{
+    border-top-right-radius: 30px!important;
+    border-top-left-radius: 30px!important;
 }
 .form-control{
     border: none;
     border-bottom: 1px solid #585858!important;
+}
+
+.hr{
+	width: 55px;
+	height: 6px;
+	background-color: #4AA4FF;
+	border: none;
+	margin-top: -5px;
 }
 
 body{
@@ -97,6 +105,12 @@ body{
 .location{
     width: 20px;
     content: url("../images/location.png");
+}
+
+@media only screen and (max-width: 768px){
+	.rounded-md-all{
+		border-radius:30px!important;
+	}
 }
 
 
